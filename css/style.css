@@ -11,7 +11,7 @@ html {
   box-sizing: inherit;
 }
 
-.image {
+.gallery {
   display: flex;
   flex-wrap: wrap;
   list-style: none;

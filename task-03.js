@@ -45,10 +45,10 @@ const addImg = images.map(({ url, alt }) => {
     'afterbegin',
     `<li><img src="${url}" alt="${alt}"/></li>`
   );
-  gallery.listGallery.classList.toggle('image');
+  gallery.listGallery.classList.add('gallery');
 
   const item = document.querySelector('img');
-  item.style.cssText = 'width: 630px; height: 375px;';
+  item.style.cssText = 'width: 70%; height: auto;';
 });
 
 gallery.listGallery.append(addImg);
