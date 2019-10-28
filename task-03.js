@@ -40,7 +40,7 @@ const gallery = {
   listGallery: document.querySelector('#gallery')
 };
 
-const addImg = images.map(({ url, alt }) => {
+const addImg = images.filter(({ url, alt }) => {
   gallery.listGallery.insertAdjacentHTML(
     'afterbegin',
     `<li><img src="${url}" alt="${alt}"/></li>`
